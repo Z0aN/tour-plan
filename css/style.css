@@ -597,7 +597,7 @@ template {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 760px;
+    max-width: 710px;
   }
   .logo {
     width: 132px;
