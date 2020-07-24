@@ -615,6 +615,7 @@ template {
 
 .booking {
   background-color: #0A223D;
+  font-family: Nunito;
   color: #ffffff;
   border-radius: 8px;
   width: 350px;
@@ -857,6 +858,9 @@ template {
 }
 
 @media (max-width: 320px) {
+  .hotel {
+    padding-top: 0;
+  }
   .hotel-info__description {
     width: 280px;
   }
