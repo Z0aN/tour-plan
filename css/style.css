@@ -1105,8 +1105,17 @@ template {
     padding-bottom: 40px;
     padding-top: 0;
   }
+  .hotel-slider {
+    height: 179px;
+  }
   .hotel-info__description {
     width: 280px;
+  }
+  .map {
+    height: 179px;
+  }
+  .booking {
+    height: 210px;
   }
 }
 /*# sourceMappingURL=style.css.map */
