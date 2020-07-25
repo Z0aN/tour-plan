@@ -7,7 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -131,25 +131,59 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-            <!-- Slider main container -->
-            <div class="swiper-container hotel-slider hotel__slider">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide.jpg" alt="photo: hotel"></div>
-                <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide2.jpg" alt="photo: hotel"></div>
-                <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide3.jpg" alt="photo: hotel"></div>
-                <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide4.jpg" alt="photo: hotel"></div>
-                <div class="swiper-slide hotel-slider__item"><img class="hotel-slider__image" src="img/slide5.jpg" alt="photo: hotel"></div>
+          <!-- Slider main container -->
+          <div class="swiper-container hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide.jpg"
+                  alt="photo: hotel"
+                />
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <button class="hotel-slider__button hotel-slider__button--prev"></button>
-              <button class="hotel-slider__button hotel-slider__button--next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide2.jpg"
+                  alt="photo: hotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide3.jpg"
+                  alt="photo: hotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide4.jpg"
+                  alt="photo: hotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="hotel-slider__image"
+                  src="img/slide5.jpg"
+                  alt="photo: hotel"
+                />
+              </div>
             </div>
-            <!-- /. swiper-container -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <button
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
+            <button
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
+          </div>
+          <!-- /. swiper-container -->
           <div class="hotel-right">
             <div class="booking">
               <div class="booking__info">
@@ -161,11 +195,11 @@
                 <!-- /.booking__price -->
                 <div class="booking__room">
                   <div class="booking__text">
-                    <img src="img/user.svg" alt="user" class="booking__icon">
+                    <img src="img/user.svg" alt="user" class="booking__icon" />
                     <span class="booking__description">2 x Guests</span>
                   </div>
                   <div class="booking__text">
-                    <img src="img/home.svg" alt="home" class="booking__icon">
+                    <img src="img/home.svg" alt="home" class="booking__icon" />
                     <span class="booking__description">1 x Room</span>
                   </div>
                   <!-- /.booking__text -->
@@ -176,7 +210,7 @@
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
                 <a class="booking__number" href="tel:12100">
-                  <img src="img/call.svg" alt="call">
+                  <img src="img/call.svg" alt="call" />
                   <span class="booking__num">12100</span>
                 </a>
               </div>
@@ -185,7 +219,16 @@
             </div>
             <!-- /.booking -->
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49603368.491361834!2d47.279231219163606!3d40.63981939741195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbabf0162238cc76f!2sHilton%20Baku!5e0!3m2!1sru!2sru!4v1595579534531!5m2!1sru!2sru" width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49603368.491361834!2d47.279231219163606!3d40.63981939741195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbabf0162238cc76f!2sHilton%20Baku!5e0!3m2!1sru!2sru!4v1595579534531!5m2!1sru!2sru"
+                width="100%"
+                height="213"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
             </div>
             <!-- /.map -->
           </div>
@@ -218,55 +261,86 @@
         <h2 class="reviews__title">What people thinks about us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="reviews-slider__item">
-                  <div class="reviews-slider__profile">
-                    <img src="img/profile-avatar.jpg" alt="Photo" class="reviews-slider__avatar">
-                    <h3 class="reviews-slider__user-name">Megan Fox</h3>
-                    <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                    <div class="reviews-slider__rating">
-                      <img src="img/star.svg" alt="star" />
-                      <img src="img/star.svg" alt="star" />
-                      <img src="img/star.svg" alt="star" />
-                      <img src="img/star.svg" alt="star" />
-                      <img src="img/star.svg" alt="star" />
-                    </div>
-                    <!-- /.reviews-slider__rating -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/profile-avatar.jpg"
+                    alt="Photo"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__user-name">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
                   </div>
-                  <!-- /.reviews-slider__profile -->
-                  <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend.</p>
+                  <!-- /.reviews-slider__rating -->
                 </div>
-                <!-- /.reviews-slider__item -->
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
               </div>
-              <div class="swiper-slide">
-                <div class="reviews-slider__item">
-                  <div class="reviews-slider__profile">
-                    <img src="img/profile-avatar2.jpg" alt="Photo" class="reviews-slider__avatar">
-                    <h3 class="reviews-slider__user-name">Lana Hekkon</h3>
-                    <span class="reviews-slider__date">Stayed 5 Oct, 2015</span>
-                    <div class="reviews-slider__rating">
-                      <img src="img/star.svg" alt="star" />
-                      <img src="img/star.svg" alt="star" />
-                      <img src="img/star.svg" alt="star" />
-                      <img src="img/star.svg" alt="star" />
-                      <img src="img/star.svg" alt="star" />
-                    </div>
-                    <!-- /.reviews-slider__rating -->
+              <!-- /.reviews-slider__item -->
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/profile-avatar2.jpg"
+                    alt="Photo"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__user-name">Lana Hekkon</h3>
+                  <span class="reviews-slider__date">Stayed 5 Oct, 2015</span>
+                  <div class="reviews-slider__rating">
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
                   </div>
-                  <!-- /.reviews-slider__profile -->
-                  <p class="reviews-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, labore aperiam dolor dolorem suscipit magnam illo ex repudiandae dignissimos eligendi? Qui natus, voluptates esse rem dolore, distinctio facilis labore obcaecati quisquam vitae consequatur. Doloribus at aperiam, nisi dolore quia laborum excepturi temporibus corrupti molestias perferendis, similique recusandae mollitia, nemo aut!</p>
+                  <!-- /.reviews-slider__rating -->
                 </div>
-                <!-- /.reviews-slider__item -->
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A,
+                  labore aperiam dolor dolorem suscipit magnam illo ex
+                  repudiandae dignissimos eligendi? Qui natus, voluptates esse
+                  rem dolore, distinctio facilis labore obcaecati quisquam vitae
+                  consequatur. Doloribus at aperiam, nisi dolore quia laborum
+                  excepturi temporibus corrupti molestias perferendis, similique
+                  recusandae mollitia, nemo aut!
+                </p>
               </div>
+              <!-- /.reviews-slider__item -->
+            </div>
           </div>
           <!-- /.swiper-wrapper -->
-          <button class="reviews-slider__button reviews-slider__button--prev"></button>
-          <button class="reviews-slider__button reviews-slider__button--next"></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
         </div>
         <!-- /.reviews-slider -->
       </div>
       <!-- /.container -->
-      </section>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
