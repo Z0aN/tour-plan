@@ -9,7 +9,7 @@
         width: 100%
         height: 100%
         object-fit: cover
-@media (max-width: 992px) 
+@media (max-width: 992px)
   .container,
   .newsletter-wrapper
     max-width: 700px
@@ -19,14 +19,14 @@
     &-top
       padding-top: 30px
       padding-bottom: 30px
-    &__search 
-      margin-left: auto 
+    &__search
+      margin-left: auto
     &-menu
       padding-top: 22px
       padding-bottom: 22px
-      &__link 
-        font-size: 12px 
-        line-height: 15px 
+      &__link
+        font-size: 12px
+        line-height: 15px
   .search
     &__input
       width: 340px
@@ -47,9 +47,9 @@
   &-slider
     &__item
       max-width: 580px
-@media (max-width: 768px) 
+@media (max-width: 768px)
   .container
-    max-width: 576px 
+    max-width: 576px
     width: 92%
   .navbar
     &__search, &-menu, &__user
@@ -101,15 +101,17 @@
   .newsletter
     &-wrapper
       display: flex
-      max-width: 576px 
+      max-width: 576px
       width: 92%
       flex-direction: column
       align-items: flex-start
   .reviews
+    &__title
+      font-size: 18px
     &-slider
       &__item
         padding: 0 30px 30px
-        &:after, &::before
+        &:after, &:before
           display: none
       &__button
         top: 32px
@@ -141,6 +143,8 @@
   .hotel
     padding-bottom: 40px
     padding-top: 0
+    &-right
+      min-height: 410px
     &-slider
       height: 179px
     &-info
@@ -150,4 +154,14 @@
     height: 179px
   .booking
     height: 210px
-    
+  .newsletter
+    &-title
+      font-size: 20px
+      &__strong
+        font-size: 30px
+  .reviews
+    &__title
+      font-size: 18px
+      margin-bottom: 42px
+      width: 245px
+      margin: 0 auto 42px auto
