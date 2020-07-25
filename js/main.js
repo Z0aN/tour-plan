@@ -26,3 +26,11 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
+
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [25.8251858, -80.23779831],
+    zoom: 10,
+  });
+}
