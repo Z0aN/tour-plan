@@ -1076,6 +1076,8 @@ template {
 
 .card:before {
   content: "";
+  position: absolute;
+  width: 100%;
   top: 0;
   top: 0;
   bottom: 0;
@@ -1108,6 +1110,7 @@ template {
 }
 
 .card__button {
+  font-family: Nunito;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
