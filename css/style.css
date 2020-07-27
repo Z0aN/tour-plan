@@ -1306,6 +1306,48 @@ template {
   color: #E0E0E0;
 }
 
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  text-align: center;
+}
+
+.footer-bottom__item {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.footer-bottom__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-icons__image {
+  width: 136px;
+  height: 22px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1438,6 +1480,11 @@ template {
     grid-column: span 5;
     -ms-grid-row: 4;
     grid-row: 4;
+  }
+  .footer-bottom {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2/6;
   }
 }
 
@@ -1576,6 +1623,18 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .footer-bottom {
+    grid-column: span 4;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-icons {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-column: 5/7;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1647,6 +1706,18 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer-bottom {
+    -ms-grid-row: 8;
+    grid-row: 8;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer-icons {
+    -ms-grid-row: 8;
+    grid-row: 8;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1656,6 +1727,22 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .footer-bottom {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer-bottom__item {
+    margin-right: 10px;
+  }
+  .footer-icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 

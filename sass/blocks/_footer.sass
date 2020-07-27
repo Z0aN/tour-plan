@@ -106,4 +106,25 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
-
+  &-bottom
+    display: flex
+    margin: auto
+    grid-column: 2/4
+    text-align: center
+    &__item
+      color: $light
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      text-decoration: none
+      margin-right: 15px
+    &__item:nth-child(3n)
+      margin-right: 0
+  &-icons
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    &__image
+      width: 136px
+      height: 22px
