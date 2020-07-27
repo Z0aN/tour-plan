@@ -9,7 +9,7 @@
     grid-gap: 20px
     grid-auto-rows: minmax(43px, min-content)
   &__logo
-    width: 166px
+    width: 154px
     grid-row: 1/3
     align-self: center
   &__categories
@@ -41,6 +41,7 @@
     margin: 0
     list-style: none
   &__title
+    display: flex
     font-style: normal
     font-weight: bold
     font-size: 18px
@@ -51,6 +52,10 @@
       margin: 0 43px 0 0
     &--mb-3
       margin-bottom: 30px
+  &__additional
+    min-width: 263px
+  &__legal
+    margin-left: auto
   &__item
     display: flex
     font-style: normal
@@ -62,14 +67,22 @@
       margin-bottom: 20px
   &__icon
     &-wrapper
-      min-width: 40px
+      min-width: 31px
   &__text
-    color: $footer-text-color
     margin-bottom: 22px
+    color: $footer-text-color
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
   &__link
     text-decoration: none
     color: inherit
   &__input
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
     background-color: $light
     border-radius: 4px
     outline: none
@@ -88,6 +101,11 @@
     border: none
     flex-basis: 100%
     margin-bottom: 23px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $footer-text-color
   &__button
     min-width: 160px
     min-height: 50px
