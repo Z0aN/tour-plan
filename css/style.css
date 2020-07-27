@@ -1190,6 +1190,7 @@ template {
 
 .footer__contact-form {
   grid-column: span 2;
+  margin-bottom: 75px;
 }
 
 .footer__form {
@@ -1486,6 +1487,9 @@ template {
     -ms-grid-column-span: 4;
     grid-column: 2/6;
   }
+  .footer__contact-form {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1622,6 +1626,9 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__contact-form {
+    margin-bottom: 15px;
   }
   .footer-bottom {
     grid-column: span 4;
@@ -1800,6 +1807,9 @@ template {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .footer__contact-form {
+    margin-bottom: -10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
