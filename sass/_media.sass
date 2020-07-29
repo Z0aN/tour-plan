@@ -310,6 +310,14 @@
     &-icons
       justify-content: start
       align-items: flex-end
+  .navbar
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+          width: 73%
 @media ( max-width: 320px)
   .container
     width: 87%

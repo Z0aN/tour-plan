@@ -1848,6 +1848,15 @@ template {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
+    display: none;
+  }
+  .navbar__search--mobile--visible, .navbar__user--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 73%;
+  }
 }
 
 @media (max-width: 320px) {
