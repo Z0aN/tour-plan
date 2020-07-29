@@ -230,6 +230,11 @@
       align-items: center
     &-icons
       grid-column: 5/7
+@media (max-width: 768px) and (orientation:landscape)
+  .navbar
+    &-bottom
+      &--visible
+        overflow-y: scroll
 @media ( max-width: 576px)
   width: 90%
   .logo

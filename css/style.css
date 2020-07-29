@@ -1302,7 +1302,6 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
 }
 
 .footer__button {
@@ -1716,6 +1715,12 @@ template {
     -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-column: 5/7;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar-bottom--visible {
+    overflow-y: scroll;
   }
 }
 
