@@ -1,0 +1,132 @@
+.other-packages
+  &__title
+    margin-top: 40px
+    margin-bottom: 65px
+    font-family: Muli
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+.packages
+  &-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr
+    grid-gap: 30px
+    margin-bottom: 70px
+  &-price
+    display: grid
+    grid-template-columns: 1fr 120px
+    grid-template-rows: 1fr 1fr
+    justify-content: space-betweend
+    &__old-price
+      display: flex
+      grid-column: 1/3
+      text-decoration: line-through
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      align-items: flex-end
+    &__new-price
+      margin-top: 5px
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__button
+      grid-column: 2/3
+      height: 40px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      color: $light
+      border: none
+      background-color: $primary
+      border-radius: 4px
+.main-card
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-column: 1/3
+  grid-row: 1/3
+  border-radius: 10px
+  background-color: $dark
+  &-info
+    grid-column: 2/3
+    color: $light
+    padding: 46px 21px 30px 43px
+    &__title
+      margin: 5px 0 27px 0 
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+    &__text
+      margin: 0 0 42px 0
+      font-family: Muli
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+    &__ul
+      margin: 0 
+      padding: 0
+      list-style-type: none
+    &__icon
+      margin-right: 14px
+    &__item
+      margin-bottom: 11px
+      font-family: Muli
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__item:nth-child(3n)
+      margin-bottom: 28px
+  &__image
+    grid-column: 1/2
+    grid-row: 1/3
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 10px 0 0 10px
+.secondary-card
+  display: grid
+  grid-row: span 2
+  grid-template-rows: 2
+  border-radius: 10px
+  background-color: $dark
+  &__image
+    display: grid
+    grid-row: span 1
+    object-fit: cover
+    border-radius: 10px 10px 0 0
+  &-info
+    padding: 30px 21px 25px 32px
+    color: $light
+    &__title
+      margin: 0 0 23px 0
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+    &__ul
+      margin: 0
+      padding: 0
+      list-style-type: none
+    &__item
+      font-family: Muli
+      margin-bottom: 11px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &__item:nth-child(3n)
+      margin-bottom: 17px
+    &__icon
+      margin-right: 14px
+
