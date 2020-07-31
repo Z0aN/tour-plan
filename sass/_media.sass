@@ -93,6 +93,9 @@
     &__contact
       &-form
         margin-bottom: 40px
+  .modal
+    &__dialog
+      padding: 20px 60px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -230,6 +233,14 @@
       align-items: center
     &-icons
       grid-column: 5/7
+  .modal
+    &__dialog
+      width: 60%
+    &__bottom
+      flex-direction: column
+      align-items: start
+    &__button
+      margin-bottom: 15px
 @media (max-width: 768px) and (orientation:landscape)
   .navbar
     &-bottom
@@ -295,6 +306,11 @@
     &-icons
       grid-row: 8
       grid-column: 1
+  .modal
+    &__dialog
+      width: 80%
+    &__button
+      width: 100%
 @media( max-width: 480px)
   .activities
     &__title
@@ -318,6 +334,10 @@
         &--visible
           display: flex
           width: 73%
+  .modal
+    &__dialog
+      padding: 10px 20px
+      width: 87%
 @media ( max-width: 320px)
   .container
     width: 87%
