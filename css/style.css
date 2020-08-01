@@ -837,7 +837,7 @@ template {
 
 .booking__button {
   width: 100%;
-  min-height: 45px;
+  height: 45px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -2001,6 +2001,10 @@ template {
     display: -ms-flexbox;
     display: flex;
     width: 73%;
+  }
+  .modal__dialog {
+    padding: 10px 20px;
+    width: 87%;
   }
 }
 
