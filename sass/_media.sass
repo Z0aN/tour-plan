@@ -246,6 +246,8 @@
     &-bottom
       &--visible
         overflow-y: scroll
+  .modal__dialog--visible
+    overflow-y: scroll
 @media ( max-width: 576px)
   width: 90%
   .logo
@@ -308,7 +310,7 @@
       grid-column: 1
   .modal
     &__dialog
-      width: 80%
+      width: 70%
     &__button
       width: 100%
 @media( max-width: 480px)
@@ -334,10 +336,6 @@
         &--visible
           display: flex
           width: 73%
-  .modal
-    &__dialog
-      padding: 10px 20px
-      width: 87%
 @media ( max-width: 320px)
   .container
     width: 87%

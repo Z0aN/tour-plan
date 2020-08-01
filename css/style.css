@@ -1848,6 +1848,9 @@ template {
   .navbar-bottom--visible {
     overflow-y: scroll;
   }
+  .modal__dialog--visible {
+    overflow-y: scroll;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1949,7 +1952,7 @@ template {
     grid-column: 1;
   }
   .modal__dialog {
-    width: 80%;
+    width: 70%;
   }
   .modal__button {
     width: 100%;
@@ -1988,10 +1991,6 @@ template {
     display: -ms-flexbox;
     display: flex;
     width: 73%;
-  }
-  .modal__dialog {
-    padding: 10px 20px;
-    width: 87%;
   }
 }
 
