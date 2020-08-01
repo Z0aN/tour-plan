@@ -1411,6 +1411,7 @@ template {
   position: fixed;
   top: 50%;
   left: 50%;
+  height: 90%;
   max-width: 478px;
   padding: 33px 88px;
   background-color: #0A223D;
@@ -1423,6 +1424,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow-y: scroll;
 }
 
 .modal__dialog--visible {
@@ -2005,6 +2007,7 @@ template {
   .modal__dialog {
     padding: 10px 20px;
     width: 87%;
+    overflow-y: scroll;
   }
 }
 
