@@ -12,6 +12,17 @@
   .card
     width: 230px
     height: 250px
+  .main-card
+    &-info
+      padding-top: 35px
+      &__title
+        margin-bottom: 15px
+      &__text
+        margin-bottom: 23px
+      &__item:nth-child(3n)
+        margin-bottom: 13px
+  .secondary-card
+    &-info
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -58,6 +69,13 @@
   .card
     width: 340px
     height: 230px
+  .other-packages
+    &__title
+      font-size: 36px
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: repeat(6, min-content)
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -140,6 +158,26 @@
   .card
     width: 49%
     height: 255px
+  .packages
+    &-price
+      &__new-price
+        font-size: 20px
+    &-wrapper
+      grid-template-rows: repeat(6, min-content)
+  .main-card
+    &-info
+      padding: 30px 20px 25px 35px
+      &__icon
+        margin-right: 7px
+  .secondary-card
+    &-info
+      padding: 25px 20px 25px 25px
+      &__icon
+        margin-right: 7px
+  .other-packages
+    &__title
+      font-size: 18px
+      margin-top: 35px
 @media ( max-width: 576px)
   .container
     width: 90%
@@ -157,6 +195,19 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .packages
+    &-wrapper
+      grid-gap: 25px
+    &-price
+      grid-template-rows: repeat(3, min-content)
+      &__new-price
+        grid-column: span 2
+        margin-bottom: 10px
+      &__button
+        grid-column: span 2
+  .main-card
+    &-info
+      padding: 25px 20px 20px 25px
 @media( max-width: 480px)
   .activities
     &__title
@@ -164,6 +215,37 @@
       margin-bottom: 36px
   .card
     width: 100%
+  .packages
+    &-wrapper
+      grid-gap: 15px
+    &-price
+      grid-template-rows: repeat(2, min-content)
+      &__new-price
+        grid-column: 1
+        grid-row: 2
+        margin-bottom: 0
+      &__button
+        grid-column: 2
+        grid-row: 2
+  .main-card
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    &-info
+      grid-column: span 2
+      grid-row: 2
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+      grid-column: span 2
+      grid-row: 1
+      border-radius: 4px 4px 0 0
+  .secondary-card
+    grid-column: span 2
+    &__image
+      object-fit: cover
+      width: 440px
+      height: 250px
 @media ( max-width: 320px)
   .hotel
     padding-bottom: 40px
