@@ -197,27 +197,7 @@
     width: 100%
   .packages
     &-wrapper
-      grid-gap: 25px
-    &-price
-      grid-template-rows: repeat(3, min-content)
-      &__new-price
-        grid-column: span 2
-        margin-bottom: 10px
-      &__button
-        grid-column: span 2
-  .main-card
-    &-info
-      padding: 25px 20px 20px 25px
-@media( max-width: 480px)
-  .activities
-    &__title
-      font-size: 18px
-      margin-bottom: 36px
-  .card
-    width: 100%
-  .packages
-    &-wrapper
-      grid-gap: 15px
+      grid-gap: 20px
     &-price
       grid-template-rows: repeat(2, min-content)
       &__new-price
@@ -231,6 +211,7 @@
     grid-template-columns: repeat(2, 1fr)
     grid-template-rows: repeat(2, 1fr)
     &-info
+      padding: 25px 20px 20px 25px
       grid-column: span 2
       grid-row: 2
     &__image
@@ -244,8 +225,15 @@
     grid-column: span 2
     &__image
       object-fit: cover
-      width: 440px
+      width: 520px
       height: 250px
+@media( max-width: 480px)
+  .activities
+    &__title
+      font-size: 18px
+      margin-bottom: 36px
+  .card
+    width: 100%
 @media ( max-width: 320px)
   .hotel
     padding-bottom: 40px
