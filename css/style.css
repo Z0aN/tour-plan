@@ -725,7 +725,7 @@ template {
   border-radius: 8px;
   width: 350px;
   min-width: 210px;
-  height: 210px;
+  min-height: 210px;
   padding: 28px;
 }
 
@@ -1440,13 +1440,13 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1477,6 +1477,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -1524,6 +1525,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .navbar-bottom--visible {
+    overflow-y: scroll;
   }
   .search__input {
     width: 340px;
