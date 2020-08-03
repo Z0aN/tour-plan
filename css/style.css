@@ -916,11 +916,9 @@ template {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
-  position: absolute;
   width: 100%;
   height: 100%;
   border: none;
@@ -930,6 +928,8 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  outline: none;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -946,6 +946,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -1254,9 +1255,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1353,6 +1354,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+  margin-top: 15px;
 }
 
 .footer-bottom {
@@ -1865,6 +1867,9 @@ template {
   .modal__button {
     margin-bottom: 15px;
   }
+  .error {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
@@ -2090,6 +2095,7 @@ template {
   .footer__info {
     width: 100%;
     margin-bottom: 15px;
+    margin-top: 0;
   }
   .footer__button {
     -webkit-box-ordinal-group: 3;

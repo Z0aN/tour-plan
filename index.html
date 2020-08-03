@@ -281,14 +281,15 @@
         </h2>
         <form
           action="send.php"
-          class="subscribe newsletter__subscribe"
+          class="subscribe newsletter__subscribe form"
           method="POST"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
-            name="email"
+            name="subscribeEmail"
+            required
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -578,6 +579,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  minlength="2"
                 />
               </div>
               <div class="footer__input-group">
@@ -586,8 +588,8 @@
                   class="input footer__input phone-validate"
                   placeholder="Phone Number*"
                   name="phone"
-                  id="phone"
                   required
+                  minlength="18"
                 />
               </div>
               <textarea
@@ -634,14 +636,15 @@
             placeholder="Your Full Name*"
             name="name"
             required
+            minlength="2"
           />
           <input
             type="tel"
             class="input modal__input phone-validate"
             placeholder="Phone Number*"
             name="phone"
-            id="phone"
             required
+            minlength="18"
           />
           <input
             type="email"
@@ -680,13 +683,14 @@
             placeholder="Your Full Name*"
             name="name"
             required
+            minlength="2"
           /><input
             type="tel"
             class="input modal__input phone-validate"
             placeholder="Phone Number*"
             name="phone"
-            id="phone"
             required
+            minlength="18"
           />
           <textarea
             class="message modal__message"

@@ -59,7 +59,6 @@ $(document).ready(function () {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
-    $("#phone").mask("+7 (000) 000-00-00");
   }
 
   function closeModal(event) {
@@ -84,12 +83,17 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Write your name",
-          minlength: jQuery.validator.format(
-            "At least {0} characters required!"
-          ),
+          minlength: "The name shouldn`t be shorter than 2 letters",
         },
         phone: {
           required: "Write your phone",
+          minlength: "Enter an existing number",
+        },
+        email: {
+          required: "Write your email",
+        },
+        subscribeEmail: {
+          required: "Write your email",
         },
       },
     });
