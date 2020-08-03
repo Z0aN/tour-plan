@@ -947,6 +947,8 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   border-radius: 0 4px 4px 0;
+  outline: none;
+  cursor: pointer;
 }
 
 .reviews {
