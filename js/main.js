@@ -99,4 +99,5 @@ $(document).ready(function () {
     });
   });
   $(".phone-validate").mask("+7 (000) 000-00-00");
+  AOS.init();
 });

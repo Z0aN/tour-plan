@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -16,7 +17,7 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="zoom-in-right">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -26,6 +27,7 @@
           <form
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
+            data-aos="fade-down"
           >
             <input
               type="text"
@@ -37,7 +39,11 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="zoom-in-left"
+          >
             <img
               src="img/user-avatar.jfif"
               alt="avatar: Nathan"
@@ -134,7 +140,11 @@
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
-          <div class="hotel-info__text">
+          <div
+            class="hotel-info__text"
+            data-aos="fade-right"
+            data-aos-delay="190"
+          >
             <div class="hotel-wrapper">
               <div class="stars">
                 <img src="img/star.svg" alt="star" />
@@ -158,6 +168,8 @@
             data-toggle="modal"
             data-href="#rating-modal"
             class="rating hotel-info__rating"
+            data-aos="fade-left"
+            data-aos-delay="200"
           >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
@@ -275,7 +287,7 @@
       data-image-src="img/newsletter-bg.jpg"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2 class="newsletter-title newsletter__title" data-aos="fade-right">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -283,6 +295,7 @@
           action="send.php"
           class="subscribe newsletter__subscribe form"
           method="POST"
+          data-aos="fade-left"
         >
           <input
             type="email"
@@ -298,8 +311,10 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people thinks about us</h2>
-        <div class="swiper-container reviews-slider">
+        <h2 class="reviews__title" data-aos="fade-down">
+          What people thinks about us
+        </h2>
+        <div class="swiper-container reviews-slider" data-aos="flip-up">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="reviews-slider__item">
@@ -382,9 +397,15 @@
     </section>
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2 class="activities__title" data-aos="fade-right">
+          Other Activities
+        </h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in-right"
+            data-aos-delay="200"
+          >
             <img
               src="img/activite.jpg"
               alt="The curious corner of chamarel"
@@ -393,7 +414,11 @@
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in-right"
+            data-aos-delay="400"
+          >
             <img
               src="img/activite2.jpg"
               alt="Gymkhana club golf course"
@@ -402,7 +427,11 @@
             <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in-right"
+            data-aos-delay="600"
+          >
             <img
               src="img/activite3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -411,7 +440,11 @@
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="zoom-in-right"
+            data-aos-delay="800"
+          >
             <img
               src="img/activite4.jpg"
               alt="The blue marine discovery quest"
@@ -432,9 +465,16 @@
             src="img/vertical-logo.svg"
             alt="logo"
             class="logo footer__logo"
+            data-aos="zoom-in-right"
           />
-          <div class="footer-list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+          <div
+            class="footer-list footer__categories"
+            data-aos="fade-right"
+            data-aos-delay="160"
+          >
+            <h3 class="footer__title">
+              ALL CATEGORIES
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals</a>
@@ -463,8 +503,14 @@
             </ul>
           </div>
           <!-- /.footer-list -->
-          <div class="footer-list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+          <div
+            class="footer-list footer__additional"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <h3 class="footer__title">
+              ADDITIONAL INFORMATION
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us</a>
@@ -490,8 +536,18 @@
           </div>
           <!-- /.footer-list -->
           <div class="footer__social-network">
-            <h3 class="footer__title footer__title--inline">Social Network</h3>
-            <div class="footer__social-links">
+            <h3
+              class="footer__title footer__title--inline"
+              data-aos="fade-down"
+              data-aos-delay="260"
+            >
+              Social Network
+            </h3>
+            <div
+              class="footer__social-links"
+              data-aos="fade-down"
+              data-aos-delay="260"
+            >
               <a href="https://www.facebook.com" class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: facebook"
               /></a>
@@ -505,7 +561,11 @@
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
+          <div
+            class="footer__list footer__legal"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -523,7 +583,11 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div
+            class="footer__contact-details"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
@@ -569,7 +633,11 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div
+            class="footer__contact-form"
+            data-aos="fade-down"
+            data-aos-delay="220"
+          >
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
@@ -712,6 +780,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
