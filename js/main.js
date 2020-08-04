@@ -28,23 +28,6 @@ $(document).ready(function () {
     },
   });
 
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [25.8251858, -80.23779831],
-      zoom: 10,
-    });
-    myMap.behaviors.disable("scrollZoom");
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      )
-    ) {
-      //... отключаем перетаскивание карты
-      myMap.behaviors.disable("drag");
-    }
-  }
-
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
