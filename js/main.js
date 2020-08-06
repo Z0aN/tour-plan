@@ -27,7 +27,6 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   });
-
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
@@ -82,5 +81,13 @@ $(document).ready(function () {
     });
   });
   $(".phone-validate").mask("+7 (000) 000-00-00");
-  AOS.init();
+  document.querySelector(".map").addEventListener("mouseenter", () => {
+    var googleMap = document.getElementById("map");
+    if ($("#map__frame").length == 0) {
+      googleMap.insertAdjacentHTML(
+        "afterbegin",
+        "<iframe id='map__frame' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6432.963282028898!2d43.322375785530056!3d38.44343979437115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4012771c021d3025%3A0x3ca87d16df84400c!2sDoubleTree%20by%20Hilton%20Hotel%20Van!5e0!3m2!1sru!2sru!4v1596639920303!5m2!1sru!2sru' frameborder='0' style='border: 0;' allowfullscreen='' aria-hidden='false' class='map__frame' tabindex='0' ></iframe>"
+      );
+    }
+  });
 });

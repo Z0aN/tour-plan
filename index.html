@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Icon" href="img/favicon-96x96.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="Icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -166,8 +165,6 @@
           </div>
           <!-- /.hotel-info__text -->
           <div
-            data-toggle="modal"
-            data-href="#rating-modal"
             class="rating hotel-info__rating"
             data-aos="fade-left"
             data-aos-delay="200"
@@ -187,36 +184,42 @@
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item">
                 <img
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src=" img/slide.jpg"
                   class="hotel-slider__image"
-                  src="img/slide.jpg"
+                  alt="photo:
+                hotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src=" img/slide2.jpg"
+                  class="hotel-slider__image"
                   alt="photo: hotel"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src=" img/slide3.jpg"
                   class="hotel-slider__image"
-                  src="img/slide2.png"
                   alt="photo: hotel"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src=" img/slide4.jpg"
                   class="hotel-slider__image"
-                  src="img/slide3.png"
                   alt="photo: hotel"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  data-src=" img/slide5.jpg"
                   class="hotel-slider__image"
-                  src="img/slide4.png"
-                  alt="photo: hotel"
-                />
-              </div>
-              <div class="swiper-slide hotel-slider__item">
-                <img
-                  class="hotel-slider__image"
-                  src="img/slide5.png"
                   alt="photo: hotel"
                 />
               </div>
@@ -272,15 +275,8 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12143.500287114286!2d43.319612872667406!3d38.44532665527552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4012771c021d3025%3A0x3ca87d16df84400c!2sDoubleTree%20by%20Hilton%20Hotel%20Van!5e0!3m2!1sru!2sru!4v1596540740249!5m2!1sru!2sru"
-                class="map__frame"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-                style="border: 0;"
-              ></iframe>
+            <div class="map" id="map">
+              <img class="map__loader" src="img/loader.gif" alt="" />
             </div>
             <!-- /.map -->
           </div>
@@ -291,11 +287,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    <section
-      class="newsletter"
-      data-parallax="scroll"
-      data-image-src="img/newsletter-bg.jpg"
-    >
+    <section class="newsletter">
       <div class="newsletter-wrapper">
         <h2 class="newsletter-title newsletter__title" data-aos="fade-right">
           subscribe to our
@@ -303,15 +295,15 @@
         </h2>
         <form
           action="send.php"
-          class="subscribe newsletter__subscribe form"
           method="POST"
-          data-aos="fade-left"
+          class="subscribe newsletter__subscribe form"
+          data-aos="fade-down"
         >
           <input
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
-            name="subscribeEmail"
+            name="email"
             required
           />
           <button class="subscribe__button">Send</button>
@@ -422,7 +414,13 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <div
             class="card activities__card"
@@ -435,7 +433,13 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <div
             class="card activities__card"
@@ -448,7 +452,13 @@
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
           <div
             class="card activities__card"
@@ -461,7 +471,13 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              class="card__button"
+              data-toggle="modal"
+              data-href="#booking-modal"
+            >
+              Book Now
+            </button>
           </div>
         </div>
         <!-- /.activites-wrapper -->
@@ -471,12 +487,14 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="logo"
-            class="logo footer__logo"
-            data-aos="zoom-in-right"
-          />
+          <a href="#" class="footer__logo">
+            <img
+              src="img/vertical-logo.svg"
+              alt="logo"
+              class="logo footer__logo"
+              data-aos="zoom-in-right"
+            />
+          </a>
           <div
             class="footer-list footer__categories"
             data-aos="fade-right"
@@ -624,10 +642,18 @@
                   />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday:
-                &nbsp;52-&nbsp;56-&nbsp;61-&nbsp;38 (08:00 am – 20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br />
+                <div class="phone-number">
+                  <a class="phone-number__link" href="tel:269 1500">
+                    Tel (business hours) : 269 1500</a
+                  >
+                  <a class="phone-number__link" href="tel:52-56-61-38"
+                    >Tel (hotline) Monday - Saturday:
+                    &nbsp;52-&nbsp;56-61-38&nbsp; (08:00 am – 20:00 pm)</a
+                  >
+                  <a class="phone-number__link" href="tel:52-56-61-38"
+                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -638,7 +664,11 @@
                   />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                cherly.lawson@example.com
+                <a
+                  href="mailto:cherly.lawson@example.com"
+                  class="phone-number__link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -785,11 +815,23 @@
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/parallax.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      function init() {
+        var imgDefer = document.getElementsByTagName("img");
+        for (var i = 0; i < imgDefer.length; i++) {
+          if (imgDefer[i].getAttribute("data-src")) {
+            imgDefer[i].setAttribute(
+              "src",
+              imgDefer[i].getAttribute("data-src")
+            );
+          }
+        }
+      }
+      window.onload = init;
+    </script>
   </body>
 </html>

@@ -12,13 +12,19 @@ $email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Почта:</b> $email<br><br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+$body = "<h2>Новое письмо</h2>"
+if (!empty($name)) {
+    "<b>Имя:</b> $name<br>"
+};
+if (!empty($email)) {
+    "<b>Почта:</b> $email<br><br>"
+};
+if (!empty($phone)) {
+    "<b>Телефон:</b> $phone<br><br>"
+};
+if (!empty($phone)) {
+    "<b>Сообщение:</b><br>$message"
+};
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
