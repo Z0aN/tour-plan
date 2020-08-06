@@ -156,13 +156,22 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="logo"
-            class="logo footer__logo"
-          />
-          <div class="footer-list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+          <a href="#" class="footer__logo">
+            <img
+              src="img/vertical-logo.svg"
+              alt="logo"
+              class="logo footer__logo"
+              data-aos="zoom-in-right"
+            />
+          </a>
+          <div
+            class="footer-list footer__categories"
+            data-aos="fade-right"
+            data-aos-delay="160"
+          >
+            <h3 class="footer__title">
+              ALL CATEGORIES
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals</a>
@@ -191,8 +200,14 @@
             </ul>
           </div>
           <!-- /.footer-list -->
-          <div class="footer-list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+          <div
+            class="footer-list footer__additional"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <h3 class="footer__title">
+              ADDITIONAL INFORMATION
+            </h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us</a>
@@ -218,22 +233,36 @@
           </div>
           <!-- /.footer-list -->
           <div class="footer__social-network">
-            <h3 class="footer__title footer__title--inline">Social Network</h3>
-            <div class="footer__social-links">
-              <a href="#" class="footer__link"
+            <h3
+              class="footer__title footer__title--inline"
+              data-aos="fade-down"
+              data-aos-delay="260"
+            >
+              Social Network
+            </h3>
+            <div
+              class="footer__social-links"
+              data-aos="fade-down"
+              data-aos-delay="260"
+            >
+              <a href="https://www.facebook.com" class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: facebook"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.youtube.com/" class="footer__link"
                 ><img src="img/youtube.svg" alt="Icon: youtube"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.instagram.com" class="footer__link"
                 ><img src="img/instagram.svg" alt="Icon: instagram"
               /></a>
             </div>
             <!-- /.footer__social-links -->
           </div>
           <!-- /.footer__social-network -->
-          <div class="footer__list footer__legal">
+          <div
+            class="footer__list footer__legal"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
@@ -251,7 +280,11 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div
+            class="footer__contact-details"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
@@ -278,10 +311,18 @@
                   />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday:
-                &nbsp;52-&nbsp;56-&nbsp;61-&nbsp;38 (08:00 am – 20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br />
+                <div class="phone-number">
+                  <a class="phone-number__link" href="tel:2691500">
+                    Tel (business hours) : 269 1500</a
+                  >
+                  <a class="phone-number__link" href="tel:52-56-61-38"
+                    >Tel (hotline) Monday - Saturday:
+                    &nbsp;52-&nbsp;56-61-38&nbsp; (08:00 am – 20:00 pm)</a
+                  >
+                  <a class="phone-number__link" href="tel:52-56-61-38"
+                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -292,27 +333,42 @@
                   />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="mail-link"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div
+            class="footer__contact-form"
+            data-aos="fade-down"
+            data-aos-delay="220"
+          >
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              /><input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input phone-validate"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="18"
+                />
+              </div>
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -340,9 +396,6 @@
       </div>
       <!-- /.container -->
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=5b013c7b-3883-4f15-9bca-ae54827fc5b9&lang=en_US"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
