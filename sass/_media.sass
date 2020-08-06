@@ -52,29 +52,38 @@
   .map
     width: 340px
   .reviews
+    margin-bottom: 20px
+    &__title
+      font-size: 30px
+      margin-bottom: 45px
   &-slider
     &__item
       max-width: 580px
   .activities
+    padding-bottom: 45px
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
   .card
     width: 340px
-    height: 230px
+    height: 260px
   .footer
+    padding-top: 72px
     &-wrapper
-      grid-template-columns: repeat(6,1fr)
+      grid-template-columns: repeat(4, minmax(max-content, 1fr))
       grid-row-gap: 40px
     &__title
       width: max-content
+      &--mb-3
+        margin-bottom: 42px
     &__input
       &-group
         flex-basis: 49%
     &__logo
       grid-row: 1/2
       grid-column: span 2
+      width: 96px
     &__social
       &-network
         grid-row: 1/2
@@ -102,7 +111,7 @@
   .modal
     &__dialog
       padding: 20px 60px
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -202,7 +211,7 @@
       align-items: flex-start
   .reviews
     &__title
-      font-size: 18px
+      font-size: 20px
     &-slider
       &__item
         padding: 0 30px 30px
@@ -387,13 +396,17 @@
       width: 245px
       margin: 0 auto 42px auto
   .activities
-    padding-bottom: 60px
-    padding-top: 40px
+    padding-bottom: 30px
+    padding-top: 20px
   .card
     width: 100%
   .footer
-    padding-top: 69px
+    padding-top: 68px
+    &-wrapper
+      grid-gap: 35px
     &__title
+      &--mb-3
+        margin-bottom: 18px
       &--inline
         display: block
         margin-right: 0px
