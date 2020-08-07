@@ -90,4 +90,7 @@ $(document).ready(function () {
       );
     }
   });
+  function redirect() {
+    location.href = "https://zoan-junior.ru/best-tour-plan/";
+  }
 });

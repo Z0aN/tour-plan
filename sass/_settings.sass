@@ -27,6 +27,10 @@ img
   border: none
   padding: 0 23px
   height: 50px
+  &::placeholder
+    color: #bdbdbd
+  &::-moz-placeholder, :-moz-placeholder
+    opacity: 1
 .message
   background-color: $light
   border-radius: 4px
@@ -38,6 +42,10 @@ img
   font-weight: normal
   font-size: 12px
   line-height: 15px
+  &::placeholder
+    color: #bdbdbd
+  &::-moz-placeholder, :-moz-placeholder
+    opacity: 1
 .button
   min-width: 160px
   min-height: 50px
@@ -54,3 +62,10 @@ img
   cursor: pointer
 .error
   color: red
+.back-button
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 150px
+  text-align: center
+  text-decoration: none
