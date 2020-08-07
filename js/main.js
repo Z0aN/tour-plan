@@ -34,8 +34,10 @@ $(document).ready(function () {
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
+  var closeModalOverlay = $(".modal__overlay");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+  closeModalOverlay.on("click", closeModal);
 
   function openModal() {
     var targetModal = $(this).attr("data-href");
@@ -90,7 +92,4 @@ $(document).ready(function () {
       );
     }
   });
-  function redirect() {
-    location.href = "https://zoan-junior.ru/best-tour-plan/";
-  }
 });
