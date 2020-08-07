@@ -15,6 +15,9 @@
     &__input
       flex-basis: 100%
 @media (max-width: 992px)
+  .button
+    &:hover
+      color: $light
   .container,
   .newsletter-wrapper
     max-width: 700px
@@ -68,8 +71,14 @@
   .card
     width: 340px
     height: 260px
+    &__button
+      &:hover
+        color: $light
   .footer
     padding-top: 72px
+    &__link
+      &:hover
+        color: $footer-text-color
     &-wrapper
       grid-template-columns: repeat(4, minmax(max-content, 1fr))
       grid-row-gap: 40px
@@ -114,6 +123,12 @@
   .modal
     &__dialog
       padding: 20px 60px
+  .phone-number__link
+    &:hover
+      color: $footer-text-color
+  .mail-link
+    &:hover
+      color: $footer-text-color
 @media (max-width: 767px)
   .container
     max-width: 576px
